@@ -1,0 +1,243 @@
+
+/* Tags */
+
+html {
+	background-color: #5c6497;
+}
+
+h1 {
+	font-family: cambria;
+	font-size: 3rem;
+}
+
+h2 {
+	font-family: cambria;
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-family: cambria;
+	font-size: 2rem;
+}
+
+p {
+	font-family: cambria;
+	font-size: 0.9rem;
+}
+
+/* Classes */
+
+.navbar {
+	background-color: #212d84;
+	min-height: 120px;
+	filter: drop-shadow(0px 0px 5px black); /* CSS Drop-Shadow -> https://www.w3schools.com/cssref/func_drop-shadow.php */
+}
+
+.navbar-brand {
+	text-wrap-mode: wrap;
+	text-align: center;
+	font-family: cambria;
+	font-weight: bold;
+	font-size: 1.5rem; /* Relative Font Sizing -> https://www.w3schools.com/css/css_font_size.asp */
+}
+
+/* CSS Media Queries Scalable Font -> https://www.w3schools.com/css/css3_mediaqueries.asp */
+
+/* Media query for screens smaller than a specified size */
+
+@media (min-width: 726px) {
+	.navbar-brand {
+		padding-left: 25px;
+	}
+}
+
+@media (max-width: 526px) {
+	.navbar-brand {
+		font-size: 1.25rem;
+	}
+}
+
+@media (max-width: 380px) {
+	.navbar-brand {
+		font-size: 1rem;
+	}
+}
+
+a.navbar-brand { /* indicates styling applied only to the specified tag, with the specified class */
+	color: white;
+}
+
+a.navbar-brand:hover {
+	color: white;
+}
+
+.button { /* Button Styling CSS -> https://www.w3schools.com/csS/css3_buttons.asp */
+	height: 40px;
+	border: none;
+	border-radius: 2px;
+	background-color: #8d93ca;
+	transition-duration: 0.4s;
+	font-family: cambria;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	padding-left: 15px;
+	padding-right: 15px;
+	filter: drop-shadow(0px 0px 2px #00000080); /* Drop-Shadow Opacity -> https://stackoverflow.com/a/68275986 */
+}
+
+.button:hover {
+	background-color: #5c6497;
+}
+
+.d-flex {
+	background-color: #00000000;
+}
+
+.main-padding {
+	padding-top: 175px;
+}
+
+.container {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+h1.cover-page-text {
+	font-size: 3rem;
+	color: white;
+}
+
+@media (max-width: 766px) {
+	h1.cover-page-text {
+		padding-left: 0px;
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 526px) {
+	h1.cover-page-text {
+		font-size: 1.25rem;
+	}
+}
+
+@media (max-width: 380px) {
+	h1.cover-page-text {
+		font-size: 1rem;
+	}
+}
+
+.row {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 50px;
+	background-color: white;
+	border-radius: 8px;
+	filter: drop-shadow(5px 5px 3px #00000040);
+}
+
+img.rounded-rectangle {
+	max-width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	background-color: #e2e2e2;
+	border-radius: 8px;
+	filter: drop-shadow(2px 2px 5px #00000010);
+}
+
+img.rounded-rectangle-variable-width {
+	max-width: 50%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	background-color: #e2e2e2;
+	border-radius: 8px;
+	filter: drop-shadow(2px 2px 5px #00000010);
+}
+
+@media (max-width: 1200px) {
+	img.rounded-rectangle-variable-width {
+		max-width: 75%;
+	}
+}
+
+@media (max-width: 768px) {
+	img.rounded-rectangle-variable-width {
+		max-width: 100%;
+	}
+}
+
+.map {
+	width: 75%;
+	aspect-ratio: 1 / 0.5;
+	border-radius: 8px;
+	filter: drop-shadow(2px 2px 5px #00000010);
+}
+
+@media (max-width: 1200px) {
+	.map {
+		aspect-ratio: 1 / 0.75;
+	}
+}
+
+@media (max-width: 768px) {
+	.map {
+		width: 100%;
+		aspect-ratio: 1 / 1;
+	}
+}
+
+/* CSS Grid -> https://www.w3schools.com/cssref/pr_grid-template-columns.php */
+/* CSS Grid Gap -> https://www.w3schools.com/cssref/css3_pr_gap.php */
+
+.gallery {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 1rem;
+}
+
+.gallery img { /* indicates styling applied to elements with the specified tag, contained within an element with the specified class */
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: contain;
+	border-radius: 8px;
+	background-color: white;
+	filter: drop-shadow(2px 2px 5px #00000010);
+}
+
+.caption {
+	font-size: 0.75rem;
+	opacity: 0.75;
+}
+
+.footer-padding {
+	padding-top: 40px;
+}
+
+.footer {
+	background-color: #212d84;
+	color: white;
+}
+
+@media (min-width: 992px) {
+	.footer {
+		padding-left: 25px;
+	}
+}
+
+@media (max-width: 992px) {
+	.footer {
+		text-align: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.footer {
+		font-size: 0.75rem;
+	}
+}
+
+@media (max-width: 380px) {
+	.footer {
+		font-size: 0.65rem;
+	}
+}
