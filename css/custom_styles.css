@@ -144,10 +144,11 @@ h1.cover-page-text {
 }
 
 img.rounded-rectangle {
+	padding: 0px;
 	max-width: 100%;
-	aspect-ratio: 4 / 3;
-	object-fit: cover;
+	object-fit: contain;
 	background-color: #e2e2e2;
+	border: 3px solid black;
 	border-radius: 8px;
 	filter: drop-shadow(2px 2px 5px #00000010);
 }
